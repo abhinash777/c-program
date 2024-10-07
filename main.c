@@ -1,20 +1,24 @@
+
+
 #include <stdio.h>
-#include <stdlib.h>
 
 int main()
 {
-    int n1,ans;
-    long long first=0,second=1;
+    int num,ans,i=2;
 
     printf("add your number: ");
-    scanf("%d",&n1);
+    scanf("%d",&num);
 
-    for(int i=1;i<n1;i++){
 
-    ans=first+second;
-    printf("%d\n",ans);
-    first=second;
-    second=ans;
+   for(i=2;i<=num;i++){
+    ans=i%2;
 
-    }
+
+   if(ans==0)
+     printf(" ");
+
+     else
+        printf("%d",i);
+   }
+
 }
